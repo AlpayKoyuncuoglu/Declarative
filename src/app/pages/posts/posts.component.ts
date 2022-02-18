@@ -12,6 +12,7 @@ export class PostsComponent implements OnInit {
 
   ngOnInit(): void {
     this.postService.getPosts().subscribe(data => {
+      console.log("posts.ts");
       console.log(data);
     })
   }
